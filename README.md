@@ -19,6 +19,15 @@ Some examples output demonstrating some of the key features of Vocabuliwala:
  - A teacher trying to teach a book
  - Students trying to learn vocabulary for a standardized test
 
+# Usage Instructions
+
+This is definitely not easy to use for non-technical people (and even technical people). It was a quick and dirty project.  
+ - Clone the repo and fire up `jupyter` / `ipython notebook` in the directory and open up `Vocabulary Extractor.ipynb`. 
+ - Create a directory and put your book txt in it (e.g. `book/book.txt`)
+ - Change the name of the `BOOK` variable up top to `book/book.txt`
+ - Manually run all the parts of the notebook. You may need to download the Python deps. It takes ~20-30s for a large book and isn't fully optimized. 
+ - The output in `html` with 3 sort orders - by order of most rare, by order of most used in the book, and by order of appearance in the book - will be saved as static `html` files in `book/` such as `book/book_vocab_sortby_most_common_first.html`.
+
 # Features
 
  - Tokenizes the text and words with NLTK to deal with punctuation
@@ -37,6 +46,7 @@ Some examples output demonstrating some of the key features of Vocabuliwala:
  
 # TODO 
 
+  - Make it a runnable script instead of a notebook and add options for IDF threshold, etc. 
   - Doesn't do much for words transliterated from other languages - marks them as vocab words with no dictionary definition.
   - Lemmatize before doing secondary lookup of dictionary definition words e.g. "tergiversates"
   - Make sure non dict words are written to the vocab   

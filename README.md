@@ -1,6 +1,6 @@
 # Vocabuliwala 
 
-Takes a book in English, finds the words that are "rare" (by the measure IDF >= 15 or -ln(frequency) > 14) and lists the definition in a dictionary and the places it occurs in the original text. 
+Takes a book in English, finds the words that are "rare" (by the measure IDF >= 15 or -ln(frequency) > 14) and lists the definition in a dictionary and the places it occurs in the original text. The final output is a static HTML file. You can view a live demo for a subset of words from a book here: https://deedy.github.io/vocabuliwala/
 
 Some examples output demonstrating some of the key features of Vocabuliwala:
  - Dictionary lookup
